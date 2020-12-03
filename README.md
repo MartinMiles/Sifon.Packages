@@ -9,7 +9,8 @@ In order to reference **Sifon.Packages**, one may need to have a nuget.config fi
 
 `<add key="Sifon.Packages" value="https://nuget.pkg.github.com/MartinMiles/index.json" />`
 
-You need also to specify a public security token for this repo which is: `893e082c10d3cceb937673b97c6a7adb6c720ca6`. 
+You need also to specify a public security token for this repo which is: `77c748140e8b4f5a___b17ce29294b2a9a9e147b47a` (please remove underscores from the middle). At the moment GitHub prevents one from storing tokens on commits and revokes those found, even that is a read-only token allowing access only to packages. That is why we must prevent this token from auto-deletion by putting underscores in the middle of it in order to commit and push to GitHub.
+
 
 You may end up having something similar to below:
 
@@ -24,13 +25,13 @@ You may end up having something similar to below:
     <packageSourceCredentials>
         <Sifon.Packages>
             <add key="Username" value="miles@martin.by" />
-            <add key="ClearTextPassword" value="893e082c10d3cceb937673b97c6a7adb6c720ca6" />
+            <add key="ClearTextPassword" value="77c748140e8b4f5a___b17ce29294b2a9a9e147b47a" />
         </Sifon.Packages>
     </packageSourceCredentials>
 </configuration>
 ```
 
-**Note:** if you do not use any custom NuGet repositories - you simply save the above code as-it.
+**Note:** if you do not use any custom NuGet repositories - you simply save the above code only removing underscores from the token value.
 
 
 
