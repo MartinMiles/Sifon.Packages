@@ -5,7 +5,7 @@
 
 ## How to use?
 
-In order to reference **Sifon.Packages**, one may need to have a nuget.config file at the solution root folder. Please make sure you've added the following line into `<packageSources>` node:
+In order to reference **Sifon.Packages**, one may need to have a `nuget.config` file at the solution root folder. Please make sure you've added the following line into `<packageSources>` node:
 
 `<add key="Sifon.Packages" value="https://nuget.pkg.github.com/MartinMiles/index.json" />`
 
